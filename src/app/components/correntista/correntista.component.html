@@ -21,15 +21,14 @@
     </div>
     <br>
     <p></p>
-    <div *ngFor="let item of correntistas; index as i" class=" card text-white bg-success mb-3"
-      style="max-width: 18rem;">
+
+    <div *ngFor="let item of correntistas; index as i" class="card border-warning mb-3" style="max-width: 18rem;">
       <div class="card-header ">Informe detalado do Correntista</div>
       <div class="card-body">
         <h5 class="card-title">{{item.nome}}</h5>
         <p class="card-text">Conta N° {{item.conta.numero}}</p>
         <p class="card-text">Saldo {{item.conta.saldo | currency:'BRL'}}</p>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
